@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <!-- Required meta Tags -->
+       <meta charset="utf-8"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1, 
+       shrink-to-fit=no"/>
+       <!-- links to css style files -->
+       <link rel="stylesheet" href="css/bootstrap.min.css"/>
+       <link rel="stylesheet" href="css/styles.css"/>
+       <title>Computer Architecture</title>
+   </head> 
+   
+   <body>
+        <!--Main Navbar-->
+        <nav id="my_nav" class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="index.html">
+              <img src="images/nav-bar-img.png" width="50" height="50"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="page2.html">System Architecture</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="page3.html">Instruction Codes</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="page4.html">Instruction Set</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div id="my_jumbotron_div" class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <div class = "main-text">
+                <h1 id="my_h1" class="display-4">Architecture of Computer System</h1>
+                <p>
+                    Computer is an electronic machine that makes performing any task very easy. In computer, the CPU executes each instruction provided to it, in a series of steps, this series of steps is called <b>Machine Cycle</b>, and is repeated for each instruction. One machine cycle involves <i>fetching of instruction, decoding the instruction, transferring the data, executing the instruction.</i>
+                </p>
+                <p>
+                    Computer system has five basic units that help the computer to perform operations, which are given below:
+                </p>
+                <ol style = "font-size: 2vw;">
+                    <li>Input Unit.</li>
+                    <li>Output Unit.</li>
+                    <li>Storage Unit.</li>
+                    <li>Arithmetic Logic Unit.</li>
+                    <li>Control Unit.</li>
+                </ol>
+                <h1 class="intext_h1">Input Unit:</h1>
+                <p>
+                    Input unit connects the external environment with internal computer system. It provides data and instructions to the computer system. Commonly used input devices are <i>keyboard, mouse, magnetic tape</i> etc
+                </p>
+                <p>Input unit performs following tasks:</p>
+                <ul style = "font-size: 2vw;">
+                    <li>Accept the data and instructions from the outside environment.</li>
+                    <li>Convert it into machine language.</li>
+                    <li>Supply the converted data to computer system.</li>
+                </ul>
+                
+                <h1 class="intext_h1">Output Unit:</h1>
+                <p>
+                    It connects the internal system of a computer to the external environment. It provides the results of any computation, or instructions to the outside world. Some output devices are <i>printers, monitor</i> etc.
+                </p>
+                
+                <h1 class="intext_h1">Storage Unit:</h1>
+                <p>
+                    This unit holds the data and instructions. It also stores the intermediate results before these are sent to the output devices. It also stores the data for later use.              
+                </p>
+                <p>
+                    The storage unit of a computer system can be divided into two categories:               
+                </p>
+                <ul style = "font-size: 2vw;">
+                    <li style="font-weight: bold;">Primary Storage:
+                        <span style="font-weight: normal;">
+                            This memory is used to store the data which is being currently executed. It is used for temporary storage of data. The data is lost, when the computer is switched off. RAM is used as primary storage memory.  
+                        </span>
+                    </li>
+                    <li style="font-weight: bold;">Secondary Storage:
+                        <span style="font-weight: normal;">
+                            The secondary memory is slower and cheaper than primary memory. It is used for permanent storage of data. Commonly used secondary memory devices are hard disk, CD etc.
+                        </span>
+                    </li>
+                </ul>
+                
+                <h1 class="intext_h1">Arithmetic Logical Unit:</h1>
+                <p>
+                    All the calculations are performed in <b>ALU</b> of the computer system. The <b>ALU</b> can perform basic operations such as addition, subtraction, division, multiplication etc. Whenever calculations are required, the control unit transfers the data from storage unit to <b>ALU</b>. When the operations are done, the result is transferred back to the storage unit.  
+                </p>
+                
+                <h1 class="intext_h1">Control Unit:</h1>
+                <p>
+                    It controls all other units of the computer. It controls the flow of data and instructions to and from the storage unit to ALU. Thus it is also known as central nervous system of the computer.
+                </p>
+                
+                <h1 class="intext_h1">CPU:</h1>
+                <p>
+                    It is Central Processing Unit of the computer. The control unit and ALU are together known as CPU. CPU is the brain of computer system. It performs following tasks:
+                </p>
+                <ul style = "font-size: 2vw;">
+                    <li>It performs all operations.</li>
+                    <li>It takes all decisions.</li>
+                    <li>It controls all the units of computer.</li>
+                </ul>
+                <img class="img-fluid" src="images/architecture-of-computer-system-1-1.png" style ="background-color:aliceblue;"/>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <footer>This Website Designed by Eng. Elias Dahi All Rights Reserved &copy; 2020</footer>
+        <!-- optional javascript files here -->
+        <!-- first include the jQuery then the Popper.js then the bootstrap.js-->
+        <script src="js/jquery-3.5.1.slim.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script> 
+        <script src="js/bootstrap.min.js"></script> 
+   </body>
+</html>

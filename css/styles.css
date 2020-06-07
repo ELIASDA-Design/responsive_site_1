@@ -1,0 +1,114 @@
+#my_nav {
+	background-color: firebrick;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2vw;
+}
+
+#my_jumbotron_div {
+	background: url("../images/main_page_large.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin-bottom: -4em; /*just overriding this value to hide the white space at the bottom of 
+                                the jumbotron div */
+}
+
+a.nav-link:hover
+{
+    background-color: darkblue;
+}
+
+footer
+{
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+div.main-text
+{
+    color: #db9f0c;
+}
+
+#my_h1
+{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 4vw;
+}
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2vw;
+}
+
+h2
+{
+    font-family: "Lucida Console", Monaco, monospace;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+span.types
+{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    color: darkkhaki;
+    display: block;
+    text-decoration: underline;
+}
+
+a.wiki
+{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: navajowhite;
+}
+a.wiki:hover
+{
+    font-size: 2vw;
+    color: darkolivegreen;
+}
+a.wiki:active
+{
+    font-size: 2vw;
+    color: darkred;
+}
+
+h1.intext_h1
+{
+    font-size: 2.5vw;
+    text-decoration: underline;
+}
+
+p.p_reference
+{
+    width: 100%;
+    background-color: darkgrey;
+    color: antiquewhite;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0vw;
+    padding: 1vw 1vw 1vw 1.5vw;
+    font-size: 1.7vw;
+}
+div.reference
+{
+    width: 100%;
+    padding: 1.5vw;
+    background-color: lightsteelblue;
+}
+ul.reference
+{
+    font-size: 2vw;
+    color: black;
+}
+ul.reference a
+{
+    color: saddlebrown;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+}

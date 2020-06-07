@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <!-- Required meta Tags -->
+       <meta charset="utf-8"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1, 
+       shrink-to-fit=no"/>
+       <!-- links to css style files -->
+       <link rel="stylesheet" href="css/bootstrap.min.css"/>
+       <link rel="stylesheet" href="css/styles.css"/>
+       <title>Computer Architecture</title>
+   </head> 
+   
+   <body>
+        <!--Main Navbar-->
+        <nav id="my_nav" class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="index.html">
+              <img src="images/nav-bar-img.png" width="50" height="50"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="page2.html">System Architecture</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="page3.html">Instruction Codes</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="page4.html">Instruction Set</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div id="my_jumbotron_div" class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <div class = "main-text">
+                <h1 id="my_h1" class="display-4">Computer Architecture: Instruction Codes</h1>
+                <p>While a <b>Program</b>, as we all know, is, A set of instructions that specify the operations, operands, and the sequence by which processing has to occur. An <b>instruction code</b> is a group of bits that tells the computer to perform a specific operation part.
+                </p>
+                
+                <h1 class="intext_h1">Instruction Code: Operation Code:</h1>
+                <p>
+                    The operation code of an instruction is a group of bits that define operations such as add, subtract, multiply, shift and compliment. The number of bits required for the operation code depends upon the total number of operations available on the computer. The operation code must consist of at least <b>n bits </b>for a given <b>2^n </b>operations. The operation part of an instruction code specifies the operation to be performed.  
+                </p>
+                
+                <h1 class="intext_h1">Instruction Code: Register Part:</h1>
+                <p>
+                    The operation must be performed on the data stored in registers. An instruction code therefore specifies not only operations to be performed but also the registers where the operands(data) will be found as well as the registers where the result has to be stored.
+                </p>
+                
+                <h1 class="intext_h1">Stored Program Organisation:</h1>
+                <p>
+                    The simplest way to organize a computer is to have <b>Processor Register</b> and instruction code with two parts. The first part specifies the operation to be performed and second specifies an address. The memory address tells where the operand in memory will be found.
+                </p>
+                <p>Instructions are stored in one section of memory and data in another.</p>
+                <img class="img-fluid" src = "images/instruction-codes-storage.png" style = "background-color: aliceblue;" /><br>
+                <p>
+                    Computers with a single processor register is known as <b>Accumulator (AC)</b>. The operation is performed with the memory operand and the content of AC.
+                </p>
+                
+                <h1 class="intext_h1">Common Bus System:</h1>
+                <p>
+                    The basic computer has 8 registers, a memory unit and a control unit. Paths must be provided to transfer data from one register to another. An efficient method for transferring data in a system is to use a <b>Common Bus System</b>. The output of registers and memory are connected to the common bus.
+                </p>
+                
+                <h1 class="intext_h1">Load(LD):</h1>
+                <p>
+                    The lines from the common bus are connected to the inputs of each register and data inputs of memory. The particular register whose <b>LD</b> input is enabled receives the data from the bus during the next <i>clock pulse transition</i>.
+                </p>
+                <p>Before studying about instruction formats lets first study about the operand address parts.</p>
+                <p>
+                    When the 2nd part of an instruction code specifies the operand, the instruction is said to have <b>immediate operand</b>. And when the 2nd part of the instruction code specifies the address of an operand, the instruction is said to have a <b>direct address</b>. And in <b>indirect address</b>, the 2nd part of instruction code, specifies the address of a memory word in which the address of the operand is found. 
+                </p>
+                
+                <h1 class="intext_h1">Computer Instructions:</h1>
+                <p>
+                    The basic computer has three instruction code formats. The <b>Operation code</b> (opcode) part of the instruction contains 3 bits and remaining 13 bits depends upon the operation code encountered.
+                </p>
+                <p>There are three types of formats:</p>
+                <h2>1. Memory Reference Instruction</h2>
+                <p>
+                    It uses <code>12 bits</code> to specify the address and <code>1 bit</code> to specify the addressing mode (<b>I</b>). <b>I</b> is equal to <code>0</code> for <i>direct address</i> and <code>1</code> for <i>indirect address</i>.
+                </p>
+                <h2>2. Register Reference Instruction</h2>
+                <p>
+                    These instructions are recognized by the opcode <code>111</code> with a <code>0</code> in the left most bit of instruction. The other 12 bits specify the operation to be executed.
+                </p>
+                <h2>3. Input-Output Instruction</h2>
+                <p>
+                    These instructions are recognized by the operation code <code>111</code> with a <code>1</code> in the left most bit of instruction. The remaining 12 bits are used to specify the input-output operation.
+                </p>
+                <h1 class="intext_h1">Format of Instruction:</h1>
+                <p>
+                    The format of an instruction is depicted in a rectangular box symbolizing the bits of an instruction. Basic fields of an instruction format are given below:
+                </p>
+                
+                <ol style = "font-size: 2vw;">
+                    <li>An operation code field that specifies the operation to be performed.</li>
+                    <li>An address field that designates the memory address or register.</li>
+                    <li>A mode field that specifies the way the operand of effective address is determined.</li>
+                </ol>
+                <p>
+                    Computers may have instructions of different lengths containing varying number of addresses. The number of address field in the instruction format depends upon the internal organization of its registers. 
+                </p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <footer>This Website Designed by Eng. Elias Dahi All Rights Reserved &copy; 2020</footer>
+        <!-- optional javascript files here -->
+        <!-- first include the jQuery then the Popper.js then the bootstrap.js-->
+        <script src="js/jquery-3.5.1.slim.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script> 
+        <script src="js/bootstrap.min.js"></script> 
+   </body>
+</html>
